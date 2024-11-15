@@ -12,7 +12,8 @@ header{
     background-color: black;
 }
 body{
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(0, 0, 0);
+    color: white;
     overflow-x: hidden;
 }
 .logo {
@@ -72,6 +73,7 @@ li a:hover{
     font-size: 35px;
 }
 
+
 .about{
     text-align: center;
     display: flex;
@@ -93,17 +95,16 @@ li a:hover{
 }
 
 .about h1{
-    color: #fd00ba;
+    color: #ffa9e8;
     font-size: 50px;
 }
 
 .about p{
-    color: rgb(38, 38, 38);
     margin-top: 20px;
 }
 
 .projects h1{
-    color: #fd00ba;
+    color: #ffa9e8;
     font-size: 50px;
     margin-left: 100px;
     margin-top: 100px;
@@ -134,7 +135,7 @@ li a:hover{
 }
 
 .links a {
-    color: #fd00ba;
+    color: #ff00bb;
     text-decoration: none;
 }
 
@@ -142,12 +143,21 @@ li a:hover{
     color: rgb(255, 0, 76);
 }
 
+/*hard and soft skills*/
+
 .hardAndSoftSkills h1{
     margin-top: 100px;
     margin-left: 200px;
-    color: #fd00ba;
+    color: #ffa9e8;
     font-size: 50px;
 }
+
+.colum{
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+}
+/*hard skills*/
 
 .name{
     display: flex;
@@ -155,7 +165,7 @@ li a:hover{
     gap: 300px;
 }
 
-.colum {
+.firstColum {
     display: flex;
     flex-direction: row;
     margin-top: 100px;
@@ -167,8 +177,7 @@ li a:hover{
     flex-direction: column;
     width: 50px;
     height: auto;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 53px;
 }
 
 .hard {
@@ -178,6 +187,34 @@ li a:hover{
     font-size: 30px;
 }
 
+/*soft skills*/
+
+.secondColum{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.secondIcons{
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+}
+
+.secondIcons img{
+    width: 50px;
+    height: auto;
+}
+
+.soft{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    gap: 70px;
+    margin-left: 30px;
+}
+
+/*footer*/
 #contact {
     margin-top: 100px;
     margin-left: 250px;
@@ -188,15 +225,23 @@ li a:hover{
 }
 
 #contact input {
-    width: 500px;
-    height: 50px;
+    width: 550px;
+    height: 40px;
     margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    padding-top: 0;
+    outline: none;
+}
+
+#contact .text input{
+    height: 100px;
 }
 
 #contact h1 {
     color: #232323;
     font-size: 50px;
-    margin-top: 80px;
     margin-left: 150px;
 }
 
@@ -213,9 +258,40 @@ button{
 }
 
 footer {
-    background-color: #fd002e;
-    height: 105px;
+    background-color: #d02e7a;
+    height: 150px;
     margin-top: 100px;
     color: white;
     font-size: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+footer .social{
+    display: flex;
+    flex-direction: row; 
+}
+
+.social img{
+    width: 50px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+footer .links a{
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+footer .links a:hover{
+    color: #ffa9e8;
 }
