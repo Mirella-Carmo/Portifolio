@@ -257,6 +257,10 @@ button{
     border-radius: 10px;
 }
 
+button:hover{
+    background-color: #f030b6;
+}
+
 footer {
     background-color: #d02e7a;
     height: 150px;
